@@ -55,9 +55,9 @@ h4,
 	color:$dark-gray;
 }
 p {
-	font-size:.875rem;
+	//font-size:.875rem;
 	font-family:$sans-serif;
-	line-height:1.375rem;
+	//line-height:1.375rem;
 	color:$dark-gray;
 }
 p a, a {
@@ -75,8 +75,8 @@ ul, ol {
 	margin-left:1rem;
 }
 li {
-	font-size:.875rem;
-	line-height:1.375rem;
+	// font-size:.875rem;
+	// line-height:1.375rem;
 }
 blockquote {
 	font-family:$slab;
@@ -387,8 +387,17 @@ textarea {
 /*Navigation*/
 header {
 	background:#f6f6f6;
+	// height:56px;
 	.container-fluid {
-		height:55px;
+		// height:55px;
+		ul	{
+			li	{
+				list-style:none;
+			}
+		}
+	}
+	.row {
+
 	}
 	.logo {
 		text-indent:-9999px;
@@ -397,14 +406,97 @@ header {
 		width:115px;
 		height:34px;
 		display:block;
+		margin-top:1rem;
+		margin-bottom:1rem;
+	}
+	.menu-item {
+		// margin-top:1rem;
+		// margin-bottom:1rem;
+		display:inline-block;
+		vertical-align:middle;
+	}
+	nav {
+		//height:56px;
+		ul {
+			text-align:right;
+			li {
+				display:inline-block;
+				margin-left:3rem;
+				a {
+					text-decoration:none;
+					color:#395B73;
+					font-family:$sans-serif;
+				}
+			}
+		}
+	}
+	.sub-nav {
+		background-color: #6EA9D3;
+		.projects {
+			background-color: #395B73;
+			color: #FFFFFF;
+			font-family:$slab;
+			font-size: 27px;
+			font-weight: 300;
+			line-height: 35px;
+			padding-top:1rem;
+			padding-bottom:1rem;
+		}
+		ul {
+			display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+			display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+			display: -ms-flexbox;      /* TWEENER - IE 10 */
+			display: -webkit-flex;     /* NEW - Chrome */
+			display: flex;   
+			-webkit-flex-flow: row wrap;
+			justify-content: flex-end;
+			align-items:stretch;
+			min-height:100%;
+			margin:0 auto;
+			li {
+				// display:inline-block;
+				// margin:0 auto;
+				a {
+					padding:1.7rem 2rem;
+					text-decoration:none;
+					display:block;
+					color:$white;
+					font-family:$sans-serif;
+					font-size:.625rem;
+					font-weight:500;
+					line-height:.688rem;
+					text-align:center;
+					margin:0 auto;
+					flex: 1;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+					&:hover {
+						background-color: #395B73;
+					}
+				}
+			}
+		}
 	}
 
 }
 main {
+	min-height:1000px;
+	height:calc(100vh - 92px);	
 }
 //Footer
 footer {
-	background:rgba(242,242,242,0.5);
+	// height:36px;
+	background:#343434;
+	p, a {
+		color:$white;
+		display:inline-block;
+		margin:1rem 0;
+	}
+	a {
+		text-decoration:none;
+	}
 }
 
 
