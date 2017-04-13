@@ -36,11 +36,11 @@ module.exports = function(grunt) {
     },
 
     copy: {
-      main: {
-        files: [
-          {src: ['src/assets/js/*'], dest: 'dist/assets/js/'},
-          {src: ['src/assets/js/**'], dest: 'dist/assets/js/'}
-        ]
+      files: {
+        cwd: 'src/assets/js',  // set working folder / root to copy
+        src: '**/*',           // copy all files and subfolders
+        dest: 'dist/assets/js/',    // destination folder
+        expand: true           // required when using cwd
       }
     },
 
