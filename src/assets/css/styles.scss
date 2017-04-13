@@ -301,18 +301,18 @@ textarea {
 [type=url]:focus,
 [type=week]:focus,
 textarea:focus {
-    display: block;
-    box-sizing: border-box;
-    border: 1px solid #cacaca;
-    border-radius: 3px;
-    background-color: #fefefe;
-    box-shadow: inset 0 1px 2px hsla(0, 0%, 4%, .1);
-    font-family: inherit;
-    color: #0a0a0a;
-    transition: box-shadow .5s, border-color .25s ease-in-out;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none
+	display: block;
+	box-sizing: border-box;
+	border: 1px solid #cacaca;
+	border-radius: 3px;
+	background-color: #fefefe;
+	box-shadow: inset 0 1px 2px hsla(0, 0%, 4%, .1);
+	font-family: inherit;
+	color: #0a0a0a;
+	transition: box-shadow .5s, border-color .25s ease-in-out;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none
 }
 
 [type=color].error,
@@ -386,14 +386,22 @@ textarea {
 
 /*Navigation*/
 header {
+	background:#f6f6f6;
+	.container-fluid {
+		height:55px;
+	}
+	.logo {
+		text-indent:-9999px;
+		background:url("http://placehold.it/230x68")no-repeat;
+		background-size:100%;
+		width:115px;
+		height:34px;
+		display:block;
+	}
+
 }
 main {
 }
-
-nav.main-menu {
-}
-
-
 //Footer
 footer {
 	background:rgba(242,242,242,0.5);
