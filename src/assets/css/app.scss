@@ -1,0 +1,77 @@
+/*--Variables and Mixins--*/
+@import "variables_and_mixins.scss";
+/*--End Variables and Mixins--*/
+
+/*Using Foundation as core framework*/
+
+//Do not include in build
+// *, *:before, *:after {
+// 	-moz-box-shadow: 0 0 5px rgba(255,157,24,.5);
+// 	-webkit-box-shadow: 0 0 5px rgba(255,157,24,.5);
+// 	box-shadow: 0 0 5px rgba(255,157,24,.5);
+// } 
+section.temp-label {
+	background:$dark-gray;
+	width:100%;
+	border-radius:0px;
+	padding:5rem 0;
+	h1 {
+		color:#fff;
+		text-shadow: -10px 10px 0px #00e6e6,
+                 -20px 20px 0px #01cccc,
+                 -30px 30px 0px #00bdbd;
+
+	}
+}
+.temp-social-container li {
+	float:left;
+	list-style:none;
+	&::after {
+		clear:both;
+		content:'';
+		display:block;
+	}
+}
+.backgrounds {
+	padding:2rem 0;
+}
+section {
+	padding-top:0rem;
+	padding-bottom:0rem;
+}
+.temp-margin {
+	margin:2rem auto;
+}
+//END Do not include in build
+
+//@import "old.scss";
+@import "size-large.scss";
+@import "size-standard.scss";
+@import "size-small.scss";
+@import "size-medium.scss";
+@import "size-large.scss";
+
+/* Import Animations*/
+@import "animations.scss";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
