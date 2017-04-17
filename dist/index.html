@@ -51,7 +51,8 @@
 							<li><a href="#"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Create Project</a></li>
 							<li>
 								<a class="picture" href="#">
-									<img src="http://placehold.it/37x37"/>
+									<img src="/assets/img/bee.jpg"/>
+									<span class="notifications">3</span>
 									<i class="fa fa-caret-down" aria-hidden="true"></i>
 								</a>
 							</li>
@@ -68,10 +69,10 @@
 				</div>      
 				<div class="col-md-6 col-md-offset-2 col-sm-6 col-sm-offset-0 col-xs-6">
 					<ul>
-						<li><a href="#"><span></span>Data</a></li>
-						<li><a href="#"><span></span>Model</a></li>
-						<li><a href="#"><span></span>Diagram</a></li>
-						<li><a href="#"><span></span>Visualization</a></li>
+						<li><a href="#"><span><i class="fa fa-th-list" aria-hidden="true"></i></span>Data</a></li>
+						<li><a href="#"><span><i class="fa fa-table" aria-hidden="true"></i></span>Model</a></li>
+						<li><a href="#"><span><i class="fa fa-th" aria-hidden="true"></i></span>Diagram</a></li>
+						<li><a href="#"><span><i class="fa fa-line-chart" aria-hidden="true"></i></span>Visualization</a></li>
 					</ul>
 				</div>
 			</div>			
@@ -86,24 +87,23 @@
 	<main>
 		
 		<div class="container-fluid">
-			<div class="row">
+			<div class="row row-eq-height">
 				<div class="col-md-10 col-sm-8 project-container">
 					<div class="row">
-						<div class="col-md-2 col-sm-4">
-							<h2>Datasets</h2>
-						</div>
-						<div class="col-md-10 col-sm-8">
+						<div class="col-md-12">
+							<h2>My Projects</h2>
 							<ul class="tertiary-nav">
-								<li><a href="#">Item 1</a></li>
-								<li><a href="#">Item 2</a></li>
+								<li><a class="active" href="#">Show All</a></li>
+								<li><a href="#">Favorites</a></li>
 								<li><a href="#">Item 3</a></li>
 							</ul>
+							<a class="button button-orange float-right">Create A Project</a>
 						</div>
 					</div>
 
-					<div class="project">
+					<div class="project-canvas empty">
 						
-						Project canvas
+						<p class="empty">You haven’t started any projects yet. Use the big orange button above to get started. <span>Have questions? Click here for help getting started.</span></p>
 
 					</div>
 
@@ -111,7 +111,10 @@
 				</div>	
 				<div class="col-md-2 col-sm-4 sidebar">
 					<aside>
-						aside
+						<h3 class="white">Recent Items</h3>
+						<ul>
+							<li><a href="#"></a></li>
+						</ul>
 					</aside>
 				</div>		
 			</div>
