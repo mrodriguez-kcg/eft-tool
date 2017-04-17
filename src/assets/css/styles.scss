@@ -1,4 +1,7 @@
 /*Typography*/
+html {
+	background:#343434;
+}
 body {
 	font-family:$sans-serif;
 }
@@ -21,12 +24,14 @@ h2,
 .h2-styles,
 .h2_style,
 .h2_styles {
-	display: block;
+	display: inline-block;
 	font-size:2.688rem;
-	font-family:$sans-serif;
-	font-weight: 400;
-	line-height:2.688rem;
+	font-family:$slab;
 	color:$blue;
+	font-size:1.5rem;
+	font-weight: 300;
+	line-height:2rem;
+	margin:0 auto;
 }
 h3,
 .h3,
@@ -501,9 +506,34 @@ header {
 
 }
 main {
-	min-height:1000px;
+	// min-height:1000px;
 	// height:calc(100vh - 92px);	
-	height:50vh;
+	// height:50vh;
+	.project-container {
+		padding-top:2.5rem;
+		padding-bottom:2.5rem;
+		h2 {
+			margin:0.625rem auto;
+		}
+	}
+	.sidebar {
+		background:#395B73;
+	}
+
+	ul.tertiary-nav {
+		text-align:left;
+		display:inline-block;
+		padding:0;
+		margin:1rem auto;
+		li {
+			display:inline-block;
+			margin-right:3rem;
+			a {
+
+			}
+		}
+	}
+
 }
 //Footer
 footer {
@@ -513,14 +543,15 @@ footer {
 		color:$white;
 		display:inline-block;
 		margin:1rem 0;
+		font-family:$sans-serif;
+		font-size:0.563rem;
+		line-height:0.625rem;
+		font-weight:bold;
 	}
 	a {
 		text-decoration:none;
 	}
 }
-
-
-
 
 
 
