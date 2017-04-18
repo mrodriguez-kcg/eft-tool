@@ -523,7 +523,7 @@ header {
 			color: #FFFFFF;
 			font-family:$slab;
 			font-size: 27px;
-			font-weight: 300;
+			font-weight:200;
 			line-height: 35px;
 			padding-top:1rem;
 			padding-bottom:1rem;
@@ -667,6 +667,7 @@ main {
 						}
 						ul {
 							padding-left:2.88rem;
+							margin-top:0.75rem;
 							li {
 								color: #FFFFFF;
 								font-family:$sans-serif;
@@ -676,7 +677,7 @@ main {
 								list-style:none;
 								border-bottom:0;
 								padding:0;
-								margin:0 auto;
+								margin:0 auto 0.25rem;
 							}
 						}
 					}
